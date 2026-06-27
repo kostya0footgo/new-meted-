@@ -1542,3 +1542,223 @@ footer{
     align-self: flex-end;
   }
 }
+/* =========================
+   THANK YOU SECTION FIX
+   (add at END of CSS file)
+========================= */
+
+.thank-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.thank-card {
+  width: min(520px, 100%);
+  padding: 40px 30px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+}
+
+.thank-card h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 15px;
+}
+
+.thank-card p {
+  font-size: 16px;
+  opacity: 0.75;
+  margin: 6px 0;
+}
+
+.thank-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 22px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.thank-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+  .thank-card {
+    padding: 25px 18px;
+  }
+}
+/* ===========================
+      THANK YOU PAGE
+=========================== */
+
+.thank-you-hero{
+
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#000;
+
+}
+
+.thank-image{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.58);
+
+}
+
+.thank-content{
+
+    position:relative;
+
+    z-index:5;
+
+    text-align:center;
+
+    color:white;
+
+    width:800px;
+
+    max-width:90%;
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+.small-title{
+
+    letter-spacing:6px;
+
+    color:rgba(255,255,255,.7);
+
+    font-size:14px;
+
+}
+
+.thank-content h1{
+
+    font-size:60px;
+
+    font-weight:400;
+
+    margin:20px 0;
+
+}
+
+.thank-content p{
+
+    color:rgba(255,255,255,.75);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
+
+.thank-btn{
+
+    display:inline-block;
+
+    padding:18px 42px;
+
+    color:#000;
+
+    background:white;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    transition:.35s;
+
+    border:1px solid white;
+
+}
+
+.thank-btn:hover{
+
+    background:transparent;
+
+    color:white;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+.thank-content h1{
+
+font-size:38px;
+
+}
+
+.thank-content p{
+
+font-size:16px;
+
+}
+
+.thank-btn{
+
+width:100%;
+
+padding:18px;
+
+}
+
+}
