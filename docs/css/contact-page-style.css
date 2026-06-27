@@ -18,10 +18,10 @@ body{
   align-items: center;
   background-color: rgb(10, 10, 10);
   position: relative;
-  background-image: url("../14.jpg");
+  background-image: url("/images/css");
   background-attachment: fixed;
-  background-size: cover; /* Изображение будет растягиваться на весь контейнер */
-  background-position: center; /* Центрирует изображение */
+  background-size: cover; 
+  background-position: center;
   margin: 0px;
   padding: 0px;
   background-repeat: no-repeat;
@@ -102,7 +102,16 @@ main {
 
 }
 
+.penis{
+  width: 370px;
+  height: 600px;
+  display: none;
+}
 
+.hui{
+  width: 1300px;
+  height: 900px;
+}
 
 .social-icons a {
   text-decoration: none;
@@ -114,9 +123,6 @@ main {
     width: 200px;
 }
 
-.gallery-container {
-    position: relative;
-}
 
 #gallery-image {
     height: 610px;
@@ -155,6 +161,16 @@ main {
 
 /* Адаптация под мобильные */
 @media screen and (max-width: 768px) {
+
+    .penis{
+      display: flex;
+    }
+
+      .hui{
+        display: none;
+        background-image: url("/images/203.jpg");
+    }
+
     .text {
         max-width: 90%; /* Уменьшаем ширину */
         padding: 15px;
