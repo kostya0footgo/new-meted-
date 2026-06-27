@@ -1933,3 +1933,13 @@ padding:18px;
         font-size:44px;
     }
 }
+.package-card{
+    background:#fff;
+    color:#111;
+}
+
+.featured{
+    border:3px solid #b38b59;
+    background:#fff;
+    color:#111;
+}
