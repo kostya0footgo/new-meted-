@@ -1945,34 +1945,34 @@ padding:18px;
 }
 .showreel{
     padding:80px 20px;
-    background:#000;
     text-align:center;
+    background:#fff;
 }
 
 .showreel h2{
-    font-size:42px;
+    font-size:40px;
     margin-bottom:40px;
-    color:#fff;
 }
 
 .video-wrapper{
+    position:relative;
     width:100%;
     max-width:1000px;
-    margin:0 auto;
+    margin:auto;
     aspect-ratio:16/9;
 }
 
 .video-wrapper iframe{
     width:100%;
     height:100%;
-    border:0;
-    border-radius:15px;
+    border:none;
+    border-radius:16px;
 }
 
 .video-location{
     margin-top:20px;
     font-size:18px;
-    color:#fff;
+    color:#666;
 }
 
 @media (max-width:768px){
@@ -1988,6 +1988,7 @@ padding:18px;
 
 .video-wrapper{
     width:100%;
+    border-radius:0;
 }
 
 .video-wrapper iframe{
@@ -1996,6 +1997,4 @@ padding:18px;
 
 .video-location{
     padding:0 20px;
-}
-
 }
