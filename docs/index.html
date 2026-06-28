@@ -217,6 +217,25 @@
     observer.observe(gallery);
   
     // Клик только по картинке или ссылке
+        document.getElementById("image-category").addEventListener("click", (e) => {
+      if (e.target.id === "displayed-image" || e.target.id === "displayed-link") {
+        window.location.href = imagess[index].href;
+      }
+    });
+  </script>
+    
+<a 
+  href="https://www.zola.com/wedding-vendors/wedding-photographers/ok-studio"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="zola-card"
+>
+  <div class="zola-card-content">
+    <span class="zola-badge">Featured on</span>
+    <h3>Zola Weddings</h3>
+    <p>View OK Studio on Zola</p>
+  </div>
+</a>
 <section id="packages" class="packages-section">
 
     <h2>Wedding Collections</h2>
@@ -403,25 +422,6 @@ getting it right.”
     </div>
   </div>
 </section>
-      document.getElementById("image-category").addEventListener("click", (e) => {
-      if (e.target.id === "displayed-image" || e.target.id === "displayed-link") {
-        window.location.href = imagess[index].href;
-      }
-    });
-  </script>
-    
-<a 
-  href="https://www.zola.com/wedding-vendors/wedding-photographers/ok-studio"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="zola-card"
->
-  <div class="zola-card-content">
-    <span class="zola-badge">Featured on</span>
-    <h3>Zola Weddings</h3>
-    <p>View OK Studio on Zola</p>
-  </div>
-</a>
 
 <!-- Контакт форма -->
 
