@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo and Video Studio</title>
-    <link rel="stylesheet" href="css/main-page.css">
-    <link rel="icon" type="image/x-icon" href="images/3.png">
-    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="../css/main-page.css">
+    <link rel="icon" type="image/x-icon" href="../images/3.png">
+    <link rel="stylesheet" href="../css/contact-form.css">
     <link href="https://fonts.googleapis.com/css2?family=Jomolhari:wght@400&family=Judson:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head> 
 <body>
    <div class="die">
         <div class="logo">
-            <img src="images/3.png" alt="">
+            <img src="../images/3.png" alt="">
         </div>
         <div class="burger" id="burger">
             <span></span>
@@ -38,7 +38,7 @@
     </div>
 
     <header>
-        <div class="logo"><img src="images/3.png" alt=""></div>
+        <div class="logo"><img src="../images/3.png" alt=""></div>
         <nav class="pip">
             <ul>
                 <li><a href=""> Home</a></li>
@@ -56,52 +56,30 @@
     </header>
 
     <div class="hero">
-        <img src="images/102.jpg" alt="Hero Image" class="image-hero">
-        <img src="images/102.jpg" alt="Hero Image" class="hero-image">
+        <img src="../images/102.jpg" alt="Hero Image" class="image-hero">
+        <img src="../images/102.jpg" alt="Hero Image" class="hero-image">
     </div>
 
-   <section class="hero-content">
-  <div class="hero-wrapper">
-    <div class="new-hero" style="display:flex; align-items:center; justify-content:space-between; gap:60px; flex-wrap:wrap;">
+    <section class="hero-content" style="background-color: #000; color: #fff; padding: 60px 0;">
+        <div class="hero-wrapper" style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-around;">
+            <div class="hero-content new-hero">
+                <div class="hero-text">
+                    <h1 class="hero-title">Luxury Wedding Photography & Cinematic Films<br> </h1>
+                    <p>We capture real emotions, timeless moments, and unforgettable wedding stories.</p>
+                    <p>Based in Charlotte, NC. Serving weddings across the USA.</p> 
+                </div>
 
-<div class="hero-container">
-
-    <div class="hero-text">
-
-        <h1 class="hero-title">
-            Charlotte Wedding Photography &amp; Video Team
-        </h1>
-
-        <p class="hero-subtitle">
-            Now booking Fall 2026, 2027 &amp; 2028 — limited dates available.
-        </p>
-
-        <p class="hero-location">
-            Based in Charlotte, NC. Serving weddings across the USA.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#contact" class="btn-primary">
-                Check Your Date
-            </a>
-
-            <a href="#showreel" class="btn-secondary">
-                Watch Our Film
-            </a>
+                <div class="hero-squares">
+                    <div class="square"></div>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
-
-    <div class="hero-image">
-        <img src="images/per1.jpg" alt="Wedding Photography">
-    </div>
-
-</div>
-
-<section class="gallery">
+    <section class="gallery">
         <div class="category" id="image-category">
-          <img id="displayed-image" class="ip" src="../Web-site-Kudinov/images/15.jpg" alt="Portrait">
-          <h3 id="displayed-text"><a id="displayed-link" href="../Web-site-Kudinov/images/15.jpg"></a></h3>
+          <img id="displayed-image" class="ip" src="../images/15.jpg" alt="Portrait">
+          <h3 id="displayed-text"><a id="displayed-link" href="../images/15.jpg"></a></h3>
         </div>
       </section>
 
@@ -163,15 +141,14 @@
             }
         }
     </style>
-        
 
 <!-- Автоматичное переключение картинок -->
 <script>
     const imagess = [
-      { src: "../Web-site-Kudinov/images/15.jpg", text: "Weeding", href: "wedding.html" },
-      { src: "../Web-site-Kudinov/images/1.jpg", text: "Weeding", href: "wedding.html" },
-      { src: "../Web-site-Kudinov/images/9.jpg", text: "Weeding", href: "wedding.html" },
-      { src: "../Web-site-Kudinov/images/92.jpg", text: "Weeding", href: "wedding.html" },
+      { src: "../images/15.jpg", text: "Weeding", href: "wedding.html" },
+      { src: "../images/1.jpg", text: "Weeding", href: "wedding.html" },
+      { src: "../images/9.jpg", text: "Weeding", href: "wedding.html" },
+      { src: "../images/92.jpg", text: "Weeding", href: "wedding.html" },
     ];
   
     let index = 0;
@@ -242,95 +219,8 @@
   </div>
 </a>
 
-<!-- Автоматичное переключение картинок -->
-        
-    
-<a 
-  href="https://www.zola.com/wedding-vendors/wedding-photographers/ok-studio"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="zola-card"
->
-  <div class="zola-card-content">
-    <span class="zola-badge">Featured on</span>
-    <h3>Zola Weddings</h3>
-    <p>View OK Studio on Zola</p>
-  </div>
-</a>
-<section id="packages" class="packages-section">
 
-    <h2>Wedding Collections</h2>
-    <p class="packages-subtitle">
-        Choose the collection that best fits your wedding day.
-    </p>
-
-    <div class="packages-grid">
-
-        <!-- Package 1 -->
-        <div class="package-card">
-            <h3>Essential Collection</h3>
-            <p class="coverage">4 Hours of Coverage</p>
-
-            <div class="price">$2,400</div>
-
-            <ul>
-                <li>1 Photographer + 1 Videographer</li>
-                <li>300+ Edited Photos</li>
-                <li>Cinematic Highlight Clip</li>
-                <li>Drone (weather permitting)</li>
-                <li>Private Online Gallery</li>
-            </ul>
-
-            <a href="#contact" class="package-btn">Book This Package</a>
-        </div>
-
-        <!-- Package 2 -->
-        <div class="package-card featured">
-
-            <div class="badge">
-                Most Popular
-            </div>
-
-            <h3>Premium Experience</h3>
-            <p class="coverage">8 Hours of Coverage</p>
-
-            <div class="price">$4,200</div>
-
-            <ul>
-                <li>1 Photographer + 1 Videographer</li>
-                <li>600+ Edited Photos</li>
-                <li>Cinematic Wedding Film + Highlight Clip</li>
-                <li>Drone</li>
-                <li>Private Gallery</li>
-                <li>Audio Recording (Vows & Speeches)</li>
-            </ul>
-
-            <a href="#contact" class="package-btn">Book This Package</a>
-        </div>
-
-        <!-- Package 3 -->
-        <div class="package-card">
-            <h3>Luxury Package</h3>
-            <p class="coverage">10 Hours of Coverage</p>
-
-            <div class="price">$9,500</div>
-
-            <ul>
-                <li>2 Photographers</li>
-                <li>2 Videographers</li>
-                <li>1 Content Creator</li>
-                <li>1000+ Photos</li>
-                <li>Cinematic Film + Highlight Clip</li>
-                <li>5 Instagram Reels</li>
-                <li>Drone</li>
-                <li>Private Gallery</li>
-            </ul>
-
-            <a href="#contact" class="package-btn">Book This Package</a>
-        </div>
-
-    </div>
-
+<!-- Отзывы -->
 </section>
     
     <section id="showreel" class="showreel">
@@ -444,14 +334,15 @@ getting it right.”
   </div>
 </section>
 
+
 <!-- Контакт форма -->
+<div class="line4"></div>
 
 <main1>
   <p class="text-contact">Contact Us</p>
 
-  <form action="https://formsubmit.co/footgo2022@gmail.com" method="POST" class="contact-form">
-  <input type="hidden" name="_next" value="https://ok-photography.us/thank-you.html">
-   <input type="hidden" name="_captcha" value="false">
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <input type="hidden" name="access_key" value="589af67c-ae64-4d78-9bba-80c6e7f6ac67">
 
     <div class="form-grid">
       <!-- Row 1 -->
@@ -523,12 +414,13 @@ getting it right.”
       <textarea id="message" name="message" autocomplete="off" rows="4"></textarea>
     </div>
 
-    <button type="submit">Сheck My Date</button>
+    <button type="submit">SEND</button>
   </form>
 </main1>
 
+     <div class="line4"></div>
     <section class="faq">
-        <img src="images/11.jpg" alt="Bride">
+        <img src="../images/11.jpg" alt="Bride">
         <div class="faq-content">
             <div class="faq-item">
                 <div class="faq-question">
