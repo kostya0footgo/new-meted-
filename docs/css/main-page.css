@@ -2052,3 +2052,60 @@ padding:18px;
         border-radius:10px;
     }
 }
+    .hero-buttons{
+    display:flex;
+    gap:16px;
+    margin-top:28px;
+    flex-wrap:wrap;
+}
+
+/* BASE BUTTON STYLE */
+.hero-buttons a{
+    display:inline-block;
+    padding:14px 28px;
+    font-size:14px;
+    letter-spacing:1px;
+    text-decoration:none;
+    border-radius:50px;
+    transition:all .3s ease;
+    font-weight:500;
+}
+
+/* PRIMARY BUTTON (white) */
+.btn-primary{
+    background:#fff;
+    color:#000;
+    border:1px solid #fff;
+}
+
+.btn-primary:hover{
+    background:transparent;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+/* SECONDARY BUTTON (outline) */
+.btn-secondary{
+    background:transparent;
+    color:#fff;
+    border:1px solid rgba(255,255,255,0.6);
+}
+
+.btn-secondary:hover{
+    background:#fff;
+    color:#000;
+    transform:translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width:768px){
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-buttons a{
+        width:100%;
+        max-width:280px;
+        text-align:center;
+    }
+}
