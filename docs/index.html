@@ -98,15 +98,80 @@
 
 </div>
 
-</section>
+<section class="gallery">
+        <div class="category" id="image-category">
+          <img id="displayed-image" class="ip" src="../Web-site-Kudinov/images/15.jpg" alt="Portrait">
+          <h3 id="displayed-text"><a id="displayed-link" href="../Web-site-Kudinov/images/15.jpg"></a></h3>
+        </div>
+      </section>
+
+      <style>
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            background-color: rgb(0, 0, 0);
+        }
+    
+        .category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    
+        .category h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: rgba(152, 152, 152, 0.7);
+            font-weight: normal;
+            transition: 0.6s;
+        }
+    
+        .category h3:hover {
+            color: #fff;
+            transition: 0.3s;
+        }
+    
+        .category img {
+            width: 1150px;
+            border-radius: 3px;
+            transition: 0.6s ease-in-out;
+            height: 750px;
+            object-fit: cover;
+            max-width: 100%;
+        }
+    
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                padding: 20px;
+                gap: 10px;
+                margin-top: 0px;
+            }
+    
+            .category img {
+                width: 100%;
+                height: auto;
+            }
+    
+            .category h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+        
 
 <!-- Автоматичное переключение картинок -->
 <script>
     const imagess = [
-      { src: "images/15.jpg", text: "Weeding", href: "wedding-video.html" },
-      { src: "images/1.jpg", text: "Weeding", href: "wedding-video.html" },
-      { src: "images/9.jpg", text: "Weeding", href: "wedding-video.html" },
-      { src: "images/92.jpg", text: "Weeding", href: "wedding-video.html" },
+      { src: "../Web-site-Kudinov/images/15.jpg", text: "Weeding", href: "wedding.html" },
+      { src: "../Web-site-Kudinov/images/1.jpg", text: "Weeding", href: "wedding.html" },
+      { src: "../Web-site-Kudinov/images/9.jpg", text: "Weeding", href: "wedding.html" },
+      { src: "../Web-site-Kudinov/images/92.jpg", text: "Weeding", href: "wedding.html" },
     ];
   
     let index = 0;
@@ -157,12 +222,28 @@
     observer.observe(gallery);
   
     // Клик только по картинке или ссылке
-        document.getElementById("image-category").addEventListener("click", (e) => {
+    document.getElementById("image-category").addEventListener("click", (e) => {
       if (e.target.id === "displayed-image" || e.target.id === "displayed-link") {
         window.location.href = imagess[index].href;
       }
     });
   </script>
+    
+<a 
+  href="https://www.zola.com/wedding-vendors/wedding-photographers/ok-studio"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="zola-card"
+>
+  <div class="zola-card-content">
+    <span class="zola-badge">Featured on</span>
+    <h3>Zola Weddings</h3>
+    <p>View OK Studio on Zola</p>
+  </div>
+</a>
+
+<!-- Автоматичное переключение картинок -->
+        
     
 <a 
   href="https://www.zola.com/wedding-vendors/wedding-photographers/ok-studio"
