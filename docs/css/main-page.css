@@ -2001,7 +2001,8 @@ padding:18px;
         max-width: 380px;
         height: auto;
     }
-    .showreel{
+   /*Video*?
+     .showreel{
     padding:100px 20px;
     background:#000;
     text-align:center;
@@ -2058,54 +2059,97 @@ padding:18px;
     margin-top:28px;
     flex-wrap:wrap;
 }
+    @media (max-width:768px){
 
-/* BASE BUTTON STYLE */
-.hero-buttons a{
-    display:inline-block;
-    padding:14px 28px;
-    font-size:14px;
-    letter-spacing:1px;
-    text-decoration:none;
-    border-radius:50px;
-    transition:all .3s ease;
-    font-weight:500;
+    .showreel{
+        padding:70px 20px;
+    }
+
+    .showreel h2{
+        font-size:30px;
+        margin-bottom:25px;
+    }
+
+    .video-wrapper{
+        width:100%;
+    }
 }
 
-/* PRIMARY BUTTON (white) */
+/* =========================
+   PREMIUM HERO BUTTONS
+========================= */
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    margin-top:38px;
+    flex-wrap:wrap;
+}
+
+.hero-buttons a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:190px;
+    padding:16px 34px;
+
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    text-decoration:none;
+
+    border-radius:999px;
+    transition:all .35s ease;
+
+    backdrop-filter:blur(8px);
+}
+
+/* MAIN BUTTON */
 .btn-primary{
-    background:#fff;
-    color:#000;
+    background:#ffffff;
+    color:#111;
     border:1px solid #fff;
+    box-shadow:0 12px 35px rgba(255,255,255,.12);
 }
 
 .btn-primary:hover{
-    background:transparent;
-    color:#fff;
-    transform:translateY(-2px);
+    transform:translateY(-4px);
+    box-shadow:0 20px 45px rgba(255,255,255,.18);
+    background:#f4f4f4;
 }
 
-/* SECONDARY BUTTON (outline) */
+/* OUTLINE BUTTON */
 .btn-secondary{
-    background:transparent;
+    background:rgba(255,255,255,.04);
     color:#fff;
-    border:1px solid rgba(255,255,255,0.6);
+    border:1px solid rgba(255,255,255,.25);
 }
 
 .btn-secondary:hover{
-    background:#fff;
-    color:#000;
-    transform:translateY(-2px);
+    background:rgba(255,255,255,.12);
+    border-color:rgba(255,255,255,.5);
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+/* CLICK EFFECT */
+.hero-buttons a:active{
+    transform:translateY(-1px) scale(.98);
 }
 
 /* MOBILE */
 @media (max-width:768px){
+
     .hero-buttons{
         justify-content:center;
+        gap:14px;
     }
 
     .hero-buttons a{
         width:100%;
-        max-width:280px;
-        text-align:center;
+        max-width:320px;
+        min-width:auto;
+        padding:16px 24px;
     }
 }
