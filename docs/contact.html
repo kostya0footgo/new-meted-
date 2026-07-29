@@ -109,13 +109,15 @@ src="https://www.facebook.com/tr?id=997035243117947&ev=PageView&noscript=1"
             <label for="full-name">Full Name</label>
             <input type="text" id="full-name" name="full-name" required autocomplete="off">
         
-            <label for="contact">Email</label>
-            <input type="text" id="contact" name="contact" required autocomplete="off">
+          <div class="field">
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="email" required autocomplete="email">
+</div>
 
-
-            <label for="contact">Phone Number</label>
-            <input type="text" id="contact" name="contact" required autocomplete="off">
-            
+<div class="field">
+    <label for="phone">Phone*</label>
+    <input type="tel" id="phone" name="phone" required autocomplete="tel">
+</div>
         
             <label for="event-type">Type of Event*</label>
             <select id="event-type" name="event-type" required>
