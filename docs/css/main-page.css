@@ -2119,3 +2119,25 @@ padding:18px;
         padding:16px 24px;
     }
 }
+    .image-hero {
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .hero-buttons a {
+        position: relative;
+        z-index: 10000;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .hero-squares,
+    .square {
+        pointer-events: none;
+    }
+}
